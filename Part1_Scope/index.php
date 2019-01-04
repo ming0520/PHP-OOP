@@ -1,5 +1,5 @@
 <?php
-
+//comment
  include 'includes\parentclass.inc.php';
  include 'includes\newclass.inc.php';
 
