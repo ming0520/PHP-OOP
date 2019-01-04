@@ -1,0 +1,31 @@
+create table users
+(
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+	uid varchar(128) not null,
+	pwd varchar(1000) not null,
+	gender varchar (1) not null
+);
+
+
+INSERT INTO users(uid,pwd,gender)
+VALUES(
+    'adminuid',
+    'adminpassword',
+    'A'
+);
+
+UPDATE users
+SET pwd = 'admin101'
+where id = 0
+
+UPDATE
+    users
+SET
+    uid = 'uid2',
+    pwd = 'uid2password'
+WHERE id = 2
+
+SELECT * FROM users ORDER BY id ASC/DEC\
+
+
+//select *from posts where id = '1' or subject = 'Thif is subject'
